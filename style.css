@@ -24,6 +24,7 @@ body {
   background-color: #6743ff;
   background: linear-gradient(to top, #6743fe, #312ceb);
   border-radius: 20px;
+  padding: 30px 20px;
 }
 .title {
   color: #cac6ff;
@@ -42,7 +43,7 @@ body {
 }
 
 .gray-text {
-  color: #cac6ff;
+  color: #8578ff;
   font-size: 1rem;
 }
 
@@ -71,10 +72,17 @@ body {
   line-height: normal;
   color: #cac6ff;
 }
+.summaryTitle {
+  font-weight: bold;
+  color: #31364a;
+}
 
 .statsContainer {
   display: flex;
   justify-content: space-between;
+  margin: 10px 0;
+  padding: 5px 15px 5px 0;
+  border-radius: 10px;
 }
 .reaction {
   background-color: #fff6f5;
@@ -85,7 +93,9 @@ body {
 .subText {
   display: flex;
 }
-
+.subText img {
+  padding: 0 13px;
+}
 .memory {
   background-color: #fffbf2;
 }
@@ -107,4 +117,20 @@ body {
 }
 .summaryResult p {
   color: #31364a;
+}
+/* Example CSS */
+.wordSpacing {
+  padding: 0 10px;
+
+  color: #9b97a2;
+}
+
+button {
+  border-radius: 25px;
+  border: none;
+  padding: 20px 30px;
+  margin: 35px 0 15px 0;
+  background-color: #303b5a;
+  color: white;
+  width: 100%;
 }
