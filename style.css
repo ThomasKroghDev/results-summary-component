@@ -9,6 +9,8 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -185,43 +187,73 @@ button:hover {
 @media (max-width: 768px) {
   body {
     overflow-y: scroll;
+    height: 100%;
     width: 100vw;
   }
 
   .attribution {
-    position: relative;
+    position: static;
+    transform: none;
+    margin: 0 auto;
+    padding: 20px 0;
   }
 
   .contentContainer {
     flex-direction: column;
     width: 100%;
-    overflow: auto;
+    overflow-y: scroll;
+  }
+  .contentContainer::after {
+    content: '';
+    display: none;
   }
 
-  summaryContainer,
   .resultContainer {
-    width: 100%;
-    max-width: 100%;
+    padding: 12px 0 40px 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .summaryContainer {
+    padding: 15px 30px;
+  }
+
+  .summaryContainer,
+  .resultContainer {
     min-width: 0;
+    max-width: 100%;
+  }
+  .title {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .textContainer {
+    max-width: fit-content;
   }
   .resultHeader {
-    font-size: 1.5rem;
+    margin: 25px 0;
+    font-size: 1.125rem;
   }
   .circle {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
   .circle p {
-    font-size: 3rem;
+    font-size: 2.25rem;
+  }
+  .gray-text {
+    font-size: 1rem;
   }
   .summaryTitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .result {
     font-size: 1rem;
+    margin: 0;
   }
   .statsContainer {
-    margin: 5px 0;
+    margin: 7px 0;
+    padding: 5px 10px 5px 0;
+    font-size: 14px;
   }
   .subText img {
     padding: 0 5px;
